@@ -172,6 +172,11 @@ alias yaccl='yay -Sc <<<y'
 alias yapkg='yay -G'
 alias yagrp='yay -Sg | ag $1'
 
+# sync pacman file db --
+# search package binary --
+alias yafdb='yay -Fy'
+alias yafre='yay -F $1 2>/dev/null'
+
 # directory color --
 if [[ $OSTYPE = (darwin|freebsd)* ]]; then
 	export CLICOLOR=true
